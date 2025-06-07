@@ -7,6 +7,7 @@ PRODUCT_SOONG_NAMESPACES += \
 
 PRODUCT_COPY_FILES += \
     vendor/samsung/sm8550-common/proprietary/product/etc/permissions/UimService.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/UimService.xml \
+    vendor/samsung/sm8550-common/proprietary/product/etc/permissions/privapp-permissions-euiccgoogle.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-euiccgoogle.xml \
     vendor/samsung/sm8550-common/proprietary/system_ext/etc/init/tcmd.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/tcmd.rc \
     vendor/samsung/sm8550-common/proprietary/system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.android.hotwordenrollment.common.util.xml \
     vendor/samsung/sm8550-common/proprietary/system_ext/etc/seccomp_policy/tcmd.policy:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/seccomp_policy/tcmd.policy \
@@ -61,7 +62,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/init/dataadpl.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dataadpl.rc \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/init/dataqti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dataqti.rc \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/init/hermesd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hermesd.rc \
-    vendor/samsung/sm8550-common/proprietary/vendor/etc/init/hw/init.qti.kernel.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.qti.kernel.rc \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/init/ims_rtp_daemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ims_rtp_daemon.rc \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/init/imsdaemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/imsdaemon.rc \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/init/init.audio.samsung.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.audio.samsung.rc \
@@ -409,9 +409,6 @@ PRODUCT_PACKAGES += \
     lib_SoundAlive_AlbumArt_ver105 \
     lib_SoundAlive_play_plus_ver800 \
     lib_SoundBooster_ver1100 \
-    lib_bt_aptx \
-    lib_bt_ble \
-    lib_bt_bundle \
     lib_lvacfs \
     lib_profiler \
     libadm \
@@ -424,16 +421,12 @@ PRODUCT_PACKAGES += \
     libaidenoiser \
     libaidenoiserv2 \
     libaivideocentral.arcsoft \
-    libar-acdb \
-    libar-gpr \
-    libar-gsl \
     libar-pal \
     libarcsoft_deflicker_native \
     libarcsoft_dualcam_portraitlighting_preview \
     libarcsoft_object_tracking \
     libarcsoft_video_super_night \
     libatccore \
-    libats \
     libaudio_log_utils \
     libauto_framing_arcsoft.uniplugin@1.0 \
     libauto_framing_lite.uniplugin@1.0 \
@@ -597,8 +590,6 @@ PRODUCT_PACKAGES += \
     liblowi_client \
     liblowi_common \
     liblowi_wifihal \
-    liblx-ar_util \
-    liblx-osal \
     libmaskdetection.uniplugin@1.0 \
     libmcaimegpu.samsung \
     libmcaimegpuSSM.samsung \
@@ -879,9 +870,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.esepowermanager@1.0 \
     vendor.qti.gnss-V4-ndk \
     vendor.qti.gnss-service \
-    vendor.qti.hardware.AGMIPC@1.0-impl \
-    vendor.qti.hardware.ListenSoundModel@1.0-impl \
-    vendor.qti.hardware.ListenSoundModel@1.0 \
     vendor.qti.hardware.bluetooth_sar@1.0 \
     vendor.qti.hardware.bluetooth_sar@1.1 \
     vendor.qti.hardware.bttpi-V2-ndk \
@@ -1027,6 +1015,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.imsrtpservice@3.1 \
     CACertService \
     TimeService \
+    EuiccGoogle \
     HotwordEnrollmentOKGoogleEx4HEXAGON \
     HotwordEnrollmentXGoogleEx4HEXAGON \
     uimservicelibrary \
@@ -1082,8 +1071,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.media.c2audio@1.0-service \
     vendor.samsung.hardware.camera.provider-service_64 \
     vendor.samsung.hardware.vibrator-service \
-    init.kernel.post_boot-kalama \
-    init.kernel.post_boot \
     init.qcom.class_core \
     init.qcom.sensors \
     init.qti.kernel \
