@@ -780,7 +780,6 @@ PRODUCT_PACKAGES += \
     libsnsutils \
     libsoc_helper \
     libsocial_image_enhancement.uniplugin@1.0 \
-    libspatializerparamstorage \
     libspcom \
     libspeakercalibration \
     libspl \
