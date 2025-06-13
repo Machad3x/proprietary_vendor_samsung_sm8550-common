@@ -51,7 +51,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/gnss_antenna_info.conf:$(TARGET_COPY_OUT_VENDOR)/etc/gnss_antenna_info.conf \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/gpfspath_oem_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gpfspath_oem_config.xml \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/gps.conf:$(TARGET_COPY_OUT_VENDOR)/etc/gps.conf \
-    vendor/samsung/sm8550-common/proprietary/vendor/etc/init/android.hardware.bluetooth@1.1-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.bluetooth@1.1-service-qti.rc \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/init/android.hardware.drm-service.widevine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm-service.widevine.rc \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/init/android.hardware.gnss-aidl-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gnss-aidl-service-qti.rc \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/init/android.hardware.keymaster@4.0-strongbox-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.keymaster@4.0-strongbox-service-qti.rc \
@@ -273,7 +272,6 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     vendor.qti.diaghal-V1-ndk \
-    btaudio_offload_if \
     com.samsung.sensor.hi1337 \
     com.samsung.sensor.hi847 \
     com.samsung.sensor.imx258 \
@@ -299,21 +297,12 @@ PRODUCT_PACKAGES += \
     libq3dtools_adreno \
     libq3dtools_esx \
     ese_spi_nxp \
-    android.hardware.bluetooth.audio-impl-qti \
-    android.hardware.bluetooth@1.0-impl-qti \
-    android.hardware.bluetooth@1.1-impl-qti \
     android.hardware.gnss-aidl-impl-qti \
     audio.primary.kalama \
     camera.unihal.default \
     gatekeeper.mdfpp \
     libsecaudiohal_aidl \
     sensors.dynamic_sensor_hal \
-    vendor.qti.hardware.bluetooth_audio@2.0-impl \
-    vendor.qti.hardware.bluetooth_audio@2.1-impl \
-    vendor.qti.hardware.bluetooth_sar@1.1-impl \
-    vendor.qti.hardware.btconfigstore@1.0-impl \
-    vendor.qti.hardware.btconfigstore@2.0-impl \
-    vendor.qti.hardware.bttpi-impl \
     vendor.qti.hardware.capabilityconfigstore@1.0-impl \
     vendor.qti.hardware.qccvndhal@1.0-impl \
     vendor.qti.hardware.qseecom@1.0-impl \
@@ -437,12 +426,7 @@ PRODUCT_PACKAGES += \
     libbeautyshot.arcsoft \
     libbitmlengine \
     libbitmlenginev2 \
-    libbluetooth_audio_session_aidl_qti \
-    libbluetooth_audio_session_qti \
-    libbluetooth_audio_session_qti_2_1 \
     libbodyid.arcsoft \
-    libbt-hidlclient \
-    libbtnv \
     libc++_shared \
     libc2filterplugin \
     libcacertclient \
@@ -734,7 +718,6 @@ PRODUCT_PACKAGES += \
     libsecureui_svcsock \
     libsegmentationeffect.uniplugin@1.0 \
     libsegmentationeffect_capture.uniplugin@1.0 \
-    libsehbluetooth_audio_session_aidl \
     libsemnativecarrierfeature \
     libsensorlistener \
     libsensorndkbridge \
@@ -778,7 +761,6 @@ PRODUCT_PACKAGES += \
     libsnsapi \
     libsnsdiaglog \
     libsnsutils \
-    libsoc_helper \
     libsocial_image_enhancement.uniplugin@1.0 \
     libspcom \
     libspeakercalibration \
@@ -869,9 +851,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.esepowermanager@1.0 \
     vendor.qti.gnss-V4-ndk \
     vendor.qti.gnss-service \
-    vendor.qti.hardware.bluetooth_sar@1.0 \
-    vendor.qti.hardware.bluetooth_sar@1.1 \
-    vendor.qti.hardware.bttpi-V2-ndk \
     vendor.qti.hardware.cacert@1.0 \
     vendor.qti.hardware.camera.aon-service-impl \
     vendor.qti.hardware.camera.postproc@1.0-service-impl \
@@ -892,7 +871,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.data.lce@1.0 \
     vendor.qti.hardware.data.qmi@1.0 \
     vendor.qti.hardware.dsp@1.0 \
-    vendor.qti.hardware.fm@1.0_vendor \
     vendor.qti.hardware.mwqemadapter@1.0 \
     vendor.qti.hardware.pal@1.0-impl \
     vendor.qti.hardware.qccsyshal@1.0 \
@@ -919,10 +897,6 @@ PRODUCT_PACKAGES += \
     vendor.samsung.hardware.audio-V1-ndk \
     vendor.samsung.hardware.audio@1.0 \
     vendor.samsung.hardware.biometrics.fingerprint-V1-ndk \
-    vendor.samsung.hardware.bluetooth.a2dpsink@1.0 \
-    vendor.samsung.hardware.bluetooth.audio-V1-ndk \
-    vendor.samsung.hardware.bluetooth.audio-impl \
-    vendor.samsung.hardware.bluetooth@2.0 \
     vendor.samsung.hardware.camera.device-V1-ndk \
     vendor.samsung.hardware.camera.provider-V1-ndk \
     vendor.samsung.hardware.gnss-V2-ndk_platform \
@@ -1031,7 +1005,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.ims.rcsuce-V1.2-java \
     android.hardware.gnss-aidl-service-qti.xml \
     android.hardware.security.keymint-service-qti.xml \
-    bttpi-saidl.xml \
     c2_manifest_vendor_audio.xml \
     iweaver_v1_manifest.xml \
     manifest_android.hardware.drm-service.widevine.xml \
@@ -1054,7 +1027,6 @@ PRODUCT_PACKAGES += \
     diag-router \
     dspservice \
     hermesd \
-    android.hardware.bluetooth@1.1-service-qti \
     android.hardware.drm-service.widevine \
     android.hardware.gnss-aidl-service-qti \
     android.hardware.keymaster@4.0-strongbox-service-qti \
@@ -1092,7 +1064,6 @@ PRODUCT_PACKAGES += \
     ppd \
     qcc-vendor \
     qdcmss \
-    qms \
     qrtr-cfg \
     qrtr-lookup \
     qrtr-ns \
