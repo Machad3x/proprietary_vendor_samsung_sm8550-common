@@ -99,7 +99,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/init/vendor.qti.tftp.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.tftp.rc \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/init/vendor.samsung.hardware.camera.provider-service_64.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.camera.provider-service_64.rc \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/init/vendor.samsung.hardware.thermal@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.thermal@1.0-service.rc \
-    vendor/samsung/sm8550-common/proprietary/vendor/etc/init/vendor.samsung.hardware.vibrator-default.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.vibrator-default.rc \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/init/vendor.sensors.qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.sensors.qti.rc \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/init/vendor.sensors.sscrpcd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.sensors.sscrpcd.rc \
     vendor/samsung/sm8550-common/proprietary/vendor/etc/izat.conf:$(TARGET_COPY_OUT_VENDOR)/etc/izat.conf \
@@ -914,7 +913,6 @@ PRODUCT_PACKAGES += \
     vendor.samsung.hardware.security.drk@2.0 \
     vendor.samsung.hardware.security.hermes-V1-ndk \
     vendor.samsung.hardware.thermal@1.0 \
-    vendor.samsung.hardware.vibrator-V5-ndk \
     bm3a68v08s11n29 \
     bm3a68v08s11n30 \
     bm3a68v08s11n35 \
@@ -1019,7 +1017,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.gnss-service.xml \
     vendor.samsung.hardware.camera.provider-service.xml \
     vendor.samsung.hardware.thermal@1.0-manifest.xml \
-    vendor.samsung.hardware.vibrator-default.xml \
     ATFWD-daemon \
     adpl \
     adsprpcd \
@@ -1042,7 +1039,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.media.c2@1.0-service \
     vendor.qti.media.c2audio@1.0-service \
     vendor.samsung.hardware.camera.provider-service_64 \
-    vendor.samsung.hardware.vibrator-service \
     init.qcom.class_core \
     init.qcom.sensors \
     init.qti.kernel \
